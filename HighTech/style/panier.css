@@ -1,0 +1,22 @@
+/*      BOUZRI MOHAMED,AYOUB FADOUACHE, ASMAE HAYAR 2APG3M       */
+
+
+#monpanier{
+
+}
+#montant{
+
+	background-color: #39a0ca;
+	width: 180px;
+	padding: 2px 10px;
+	border-radius: 50px;
+}
+#total
+{
+	color: white;
+}
+.imgpoubelle
+{
+	width : 20px;
+	height : 20px;
+}

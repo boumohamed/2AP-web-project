@@ -1,0 +1,1 @@
+dans le fichier scripts changez les extensions .txt par .js

@@ -1,0 +1,92 @@
+
+/*      BOUZRI MOHAMED,AYOUB FADOUACHE, ASMAE HAYAR 2APG3M       */
+
+
+
+#content
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.article
+{
+	border-radius: 10px;
+	background: white;
+}
+.img_art
+{
+	position: relative;
+	top: 50%;
+	left: 30%;
+	width : 200px;
+	height : 200px;
+}
+.nom_art
+{
+	text-align: center;
+	color: #39a0ca;
+}
+.desc_art
+{
+	text-align: center;
+	font-weight: bold;
+	color: #161748;
+	font-size: 17px;
+}
+.prix_art
+{
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	color: white;
+	width: 80px;
+	border-radius: 20px 10px;
+	position: relative;
+	bottom: 50%;
+	left: 70%;
+	background-color: #39a0ca;
+}
+
+.input_art
+{
+	position: relative;
+	left: 40%;
+	width: 60px;
+	height: 20px;
+}
+.btn_art{
+    width : 25px;
+	height : 25px;
+	background-size : cover;
+	border : solid 1px white;
+	background-image : url('../images/cmd.jpg');
+	vertical-align : top;
+	position: relative;
+	left: 40%;
+	transition: width 0.2s;
+}
+
+.btn_art:hover
+{
+	width : 27px;
+}
+#Promotion
+{
+	color: white;
+	display: inline-block;
+	background: red;
+	font-size: 25px;
+	border-radius: 30px 10px;
+	width: 100px;
+	padding: 10px;
+	position: relative;
+	left: 10%;
+	bottom: 250px;
+	animation: clignote 0.3s infinite; 
+}
+@keyframes  clignote{  
+    0%,20%{ opacity : 1; }
+    50%,70%{ opacity : 0; }
+    100% {opacity : 1; }
+}

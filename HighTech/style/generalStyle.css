@@ -1,0 +1,209 @@
+
+
+/*      BOUZRI MOHAMED,AYOUB FADOUACHE, ASMAE HAYAR 2APG3M       */
+
+
+body
+{
+	background: linear-gradient(to right,#FFFFFF,#CAEAFC);
+}
+#menu ul li
+{
+	display: inline-block;
+	margin-right: 30px;
+	position: relative;
+	left: 30%;
+	top: 40px;
+
+
+}
+#menu ul li a,.dropbtn
+{
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color: #0f2862;
+	color: white;
+	font-weight: bold;
+	border-color: none;
+	border-radius: 20px 10px;
+
+}
+#menu ul li #home
+{
+	background: transparent;
+	color: #0f2862;
+	border-color: #feda6a;
+	
+}
+#menu ul li #home:hover
+{
+	
+	color: #0f2862;
+	border-bottom : solid;
+	transition: 0.3s;
+}
+#menu
+{
+	height: 220px; 
+}
+
+
+.dropbtn:hover
+{
+	background: transparent;
+	color: #0f2862;
+	border-bottom : solid;
+
+}
+#menu ul li a:hover
+{
+	background: transparent;
+	color: #0f2862;
+	border-bottom : solid;
+	transition: 0.3s;
+	
+}
+#siteurl
+{
+	text-align: center;
+	font-size: 40px;
+	font-family: "Courier New", Courier, monospace;
+	color:  #fe7171;
+	animation: clignote 4s infinite; 
+	clear: right;
+}
+ 
+@keyframes  clignote{  
+    0%,20%{ opacity : 1; }
+    50%,70%{ opacity : 0; }
+    100% {opacity : 1; }
+}
+
+#connexion
+{
+	/*float: right;*/
+	position: absolute;
+	right: 2%;
+	top: 10%;
+}
+#connect
+{
+	border : none;
+	padding: 5px;
+	background : transparent;
+	font-weight: bold;
+	font-size : 1em;
+	border-radius : 10px;
+	width : 110px;
+	height: 40px;
+	color: #0f2862;
+	
+}
+#connect:hover
+{
+	color: #0f2862;
+	border-bottom: solid;
+	transition: 0.3s;
+}
+
+
+
+#copyright
+{
+	font-size: 15px;
+	color: #fe7171;
+	position: relative;
+	bottom: 0;
+	text-align: center;
+	font-weight: bold;
+	clear: both;
+}
+#logo
+{
+	width : 170px;
+	height : 170px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+p
+{
+	font-size: 20px;
+	font-weight: bold;
+	color: #39a0ca;
+}
+td
+{
+	font-size: 20px;
+	font-weight: bold;
+	color: #39a0ca;	
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn
+{
+	border: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 15px;
+  top: 40px;
+  background: transparent;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.dropdown-content a {
+
+  display: block;
+  margin: 2px;
+}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+#recherche
+{
+	position: absolute;
+	top: 40%;
+	left: 55%;
+}
+#recherche form label,input
+{
+	font-size: 100%;
+	color: #0f2862;
+}
+#recherche form input[type="button"]{
+	border : none;
+	padding: 0 5px;
+	background: #0f2862;
+	color: white;
+	font-size : 1.25em;
+	border-radius: 20px 10px;
+	width : 50px;
+	height: 30px;
+
+}
+#recherche form input[type="button"]:hover
+{
+	background: transparent;
+	color: #0f2862;
+	transition: 0.3s;
+}
+#recherche form input[type="search"]{
+	border : none;
+	padding: 0 5px;
+	background: #0f2862;
+	color: white;
+	font-size : 1.25em;
+	border-radius: 20px 10px;
+	height: 30px;
+	width: 400px;
+
+}

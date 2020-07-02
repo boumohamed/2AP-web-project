@@ -1,0 +1,89 @@
+
+<!--      BOUZRI MOHAMED,AYOUB FADOUACHE, ASMAE HAYAR 2APG3M        -->
+
+
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"/>
+<title> Inscrivez-vous </title>
+<link rel="stylesheet" type="text/css" href="../style/inscription.css">
+<link rel="stylesheet" type="text/css" href="../style/generalStyle.css">
+</head>
+<body>
+	<header>
+		<a href="../index.html"><img src="../images/logo.png" id="logo"></a>
+		<h1 id="siteurl"> www.HighTech.com </h1>
+	</header>
+	<div id="connexion">
+	<button id="connect"> Connexion </button>
+	</div>
+	<nav id="menu">
+	 <ul>
+		 <li> <a href="../index.html" id="home"> Home </a></li> 
+		 <li>
+		 	<div class="dropdown">
+				  <button class="dropbtn">Articles</button>
+				  <div class="dropdown-content">
+				      <a href="articles.html">Computers</a>
+		              <a href="Phones.html">Phones</a>
+		              <a href="TVs.html">TVs</a>
+				  </div>
+			</div> 
+		 </li> 
+		 <li> <a href="panier.html">Votre Panier </a></li> 
+		 <li> <a href="contact.html">Contact </a></li> 
+		 <li> <a href="inscription.html">Inscription </a></li>
+		 <li> <a href="recherche.html">rechercher </a></li> 
+	</ul>
+	</nav> 
+	<section id ="content">
+	 <form  id="inscription" method="post" action = "compte.html"> 
+		<fieldset>
+			<legend> informations Personnelles</legend>
+			<label for="nom"> Nom 
+			<input type="text" name="nom" id="nom" placeholder="Nom"/></label>
+			<label for="prenom"> Prénom 
+			<input type="text" name="prenom" id="prenom" placeholder="Prénom"/></label>
+			<label for="email"> Email 
+			<input type="email" name="email" id="email" placeholder="xyz@gmail.com"/> </label>
+			<label for="tel"> Tél 
+			<input type="tel" name="tel" id="tel" placeholder="06********"/> </label>
+			</fieldset>
+		<fieldset>
+		    <legend>Creer un Mot de Passe </legend>	
+			<label for="pwd"> Mot de passe 
+			<input type="password" name="pwd" id="pwd" placeholder="Mot de passe"/> </label>
+			<label for="pwd"> Confirmez le mot de passe 
+			<input type="password" name="pwdcopy" id="pwdcopy" placeholder="Confirmez le mot de passe"/></label>
+		</fieldset>
+			<input type="submit" value="Inscription" id="btnIns"/>
+		</form> 
+	</section>
+
+
+	
+	<footer>
+	    <p id="copyright">Bouzri Mohamed, Asmae Hayar, Ayoub Fadouache, 2AP, G3, EMSI Maarif, 2020</p>
+	</footer>
+
+
+<script type="text/javascript">
+	var myForm = document.getElementById("inscription");
+ myForm.onsubmit = function()  
+	  {
+	    var nom = document.getElementById("nom").value;
+	    var prenom = document.getElementById("prenom").value;
+	    var email = document.getElementById("email").value;
+	    var tel = document.getElementById("tel").value;
+	     sessionStorage.setItem("nom",nom);
+         sessionStorage.setItem("prenom",prenom);
+         sessionStorage.setItem("email",email);
+         sessionStorage.setItem("tel",tel);
+  }		
+</script>
+</body>
+</html>
+
+
+
